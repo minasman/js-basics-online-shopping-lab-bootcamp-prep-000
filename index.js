@@ -39,6 +39,11 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var cartTotal = 0;
+  for (var i=0; i<cart.length; i++){
+    cartTotal += parseInt(cart[i].itemPrice);
+  }
+  return `Your current total is $${cartTotal}.`
 }
 
 function removeFromCart(item) {
