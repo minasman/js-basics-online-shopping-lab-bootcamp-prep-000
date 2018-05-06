@@ -18,8 +18,13 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   if (cart.length ===1 ){
-    return `In your cart, you have ${cart[0].itemName]} at $${cart[0].itemPrice}.`
+    return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
+  
+  if (cart.length ===1 ){
+    return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
+  }
+  
 }
 
 function total() {
