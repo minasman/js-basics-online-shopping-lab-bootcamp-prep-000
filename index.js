@@ -19,12 +19,8 @@ function viewCart() {
   // write your code here
   if (cart.length >0){
     var inCart = 'In your cart, you have ';
-    for (var i=0; i<cart.length; i++){
-      if(i===0 && cart.length === 1){
-        return `In your cart, you have ${itemName} at $${itemPrice}.`
-      } else if (i===0 && cart.length === 2){
-        inCart += `${cart[i].itemName} at $${cart[i].itemPrice}, and ${cart[i+1].itemName} at $${cart[i+1].itemPrice}.`
-        return inCart;
+       return inCart;
+        
       } else 
     }
  
