@@ -47,7 +47,7 @@ function total() {
   for (var i=0; i<cart.length; i++){
     cartTotal += parseInt(cart[i].itemPrice);
   }
-  return `Your current total is $${cartTotal}.`
+  return cartTotal;
 }
 
 function removeFromCart(item) {
